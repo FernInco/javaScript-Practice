@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	font-family: Arial, sans-serif;
+	background: #f2f4f8;
+	color: #1f2937;
+}
+
+main,
+.container,
+.number-checker {
+	width: min(90%, 420px);
+	padding: 2rem;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+input,
+button {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	font: inherit;
+	border-radius: 6px;
+}
+
+input {
+	margin: 1rem 0;
+	border: 1px solid #cbd5e1;
+}
+
+button {
+	border: 0;
+	background: #2563eb;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #1d4ed8;
+}
+
