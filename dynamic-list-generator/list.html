@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+<body>
+
+
+    <script>
+        let num = Number(prompt("Enter a number"));
+        for (let i=1; i<=num; i++) {
+            if (i % 2 == 0) {
+                let para = document.createElement('p');
+                let created_para = document.body.appendChild(para);
+                let text = created_para.innerText = i;
+                let color = created_para.style.color = 'red'
+
+            }
+
+            if (i % 2 != 0) {
+                let para = document.createElement('p');
+                let created_para = document.body.appendChild(para);
+                let text = created_para.innerText = i;
+                let color = created_para.style.color = 'blue'
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
