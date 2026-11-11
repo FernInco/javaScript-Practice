@@ -9,8 +9,9 @@
 
 
     <script>
-        let num = Number(prompt("Enter a number"));
-        for (let i=1; i<=num; i++) {
+        let start = Number(prompt("Enter starting number"));
+        let finish = Number(prompt("Enter finishing number"));
+        for (let i = start; start <= i && i <= finish; i++) {
             if (i % 2 == 0) {
                 let para = document.createElement('p');
                 let created_para = document.body.appendChild(para);
