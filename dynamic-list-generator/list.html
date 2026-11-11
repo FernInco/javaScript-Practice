@@ -11,24 +11,43 @@
     <script>
         let start = Number(prompt("Enter starting number"));
         let finish = Number(prompt("Enter finishing number"));
-        for (let i = start; start <= i && i <= finish; i++) {
+        for (let i = start; i <= finish; i++) {
             if (i % 2 == 0) {
-                let para = document.createElement('p');
-                let created_para = document.body.appendChild(para);
+                let created_para = createPara();
                 let text = created_para.innerText = i;
-                let color = created_para.style.color = 'red'
+                created_para.style.color = 'red'
 
-            }
+                let sqr = square(i);
+                created_para.innerText += ` | Square:${sqr}`;
 
-            if (i % 2 != 0) {
-                let para = document.createElement('p');
-                let created_para = document.body.appendChild(para);
-                let text = created_para.innerText = i;
-                let color = created_para.style.color = 'blue'
+            } else {
+                let created_para = createPara();
+                created_para.innerText = i;
+                created_para.style.color = 'blue'
+
+                let sqr = square(i);
+                created_para.innerText += ` | Square:${sqr}`;
                 
             }
 
+            
+            
+
         }
+
+        function createPara() {
+            let para = document.createElement('p');
+            let p = document.body.append(para);
+            return para;
+        }
+
+        function square(num) {
+            let sq = num**2;
+            return sq;
+
+        }
+
+
     </script>
 </body>
 </html>
